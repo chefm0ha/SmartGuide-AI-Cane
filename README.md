@@ -1,7 +1,7 @@
 # SmartGuide: AI-Assisted Navigation Cane
 
 <p align="center">
-  <img src="docs/images/cane_prototype.jpg" alt="SmartGuide Prototype" width="400"/>
+  <img src="docs/images/cane_prototype.jpeg" alt="SmartGuide Prototype" width="400"/>
 </p>
 
 ## Overview
