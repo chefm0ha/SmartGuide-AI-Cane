@@ -1,0 +1,29 @@
+# Arduino IDE files
+.vscode/
+*.DS_Store
+
+# Build files
+build/
+*.hex
+*.elf
+*.bin
+
+# Personal configuration files
+config.h
+
+# Generated documentation
+docs/generated/
+
+# Model training data (potentially large)
+src/ai_model/training_data/
+
+# Dependencies (libraries should be installed by the user)
+libraries/
+
+# Testing output
+test/output/
+
+# IDE specific files
+.idea/
+*.swp
+*.swo

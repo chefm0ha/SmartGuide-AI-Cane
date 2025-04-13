@@ -1,0 +1,108 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">SmartGuide System Architecture</text>
+  
+  <!-- Main Components Boxes -->
+  <!-- Sensing Unit -->
+  <rect x="100" y="100" width="160" height="100" rx="10" fill="#a8d5ff" stroke="#0066cc" stroke-width="2" />
+  <text x="180" y="145" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Sensing Unit</text>
+  <text x="180" y="170" font-family="Arial" font-size="12" text-anchor="middle">Ultrasonic Sensors</text>
+  <text x="180" y="185" font-family="Arial" font-size="12" text-anchor="middle">GPS Module</text>
+  
+  <!-- Processing Unit -->
+  <rect x="320" y="100" width="160" height="100" rx="10" fill="#c9e7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="400" y="145" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Processing Unit</text>
+  <text x="400" y="170" font-family="Arial" font-size="12" text-anchor="middle">ESP32 Microcontroller</text>
+  <text x="400" y="185" font-family="Arial" font-size="12" text-anchor="middle">Data Processing</text>
+  
+  <!-- AI Module -->
+  <rect x="320" y="250" width="160" height="100" rx="10" fill="#ffb8b8" stroke="#cc0000" stroke-width="2" />
+  <text x="400" y="295" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">AI Module</text>
+  <text x="400" y="320" font-family="Arial" font-size="12" text-anchor="middle">Obstacle Classification</text>
+  <text x="400" y="335" font-family="Arial" font-size="12" text-anchor="middle">Path Planning</text>
+  
+  <!-- Feedback System -->
+  <rect x="540" y="100" width="160" height="100" rx="10" fill="#c9e7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="620" y="145" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Feedback System</text>
+  <text x="620" y="170" font-family="Arial" font-size="12" text-anchor="middle">Haptic Motors</text>
+  <text x="620" y="185" font-family="Arial" font-size="12" text-anchor="middle">Audio Output</text>
+  
+  <!-- Map System -->
+  <rect x="100" y="250" width="160" height="100" rx="10" fill="#d4ffd6" stroke="#008800" stroke-width="2" />
+  <text x="180" y="295" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Map System</text>
+  <text x="180" y="320" font-family="Arial" font-size="12" text-anchor="middle">Environmental Mapping</text>
+  <text x="180" y="335" font-family="Arial" font-size="12" text-anchor="middle">Spatial Memory</text>
+  
+  <!-- Power Management -->
+  <rect x="320" y="400" width="160" height="100" rx="10" fill="#ffe5a8" stroke="#cc7700" stroke-width="2" />
+  <text x="400" y="445" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Power Management</text>
+  <text x="400" y="470" font-family="Arial" font-size="12" text-anchor="middle">Battery & Charging</text>
+  <text x="400" y="485" font-family="Arial" font-size="12" text-anchor="middle">Power Optimization</text>
+  
+  <!-- User Interface -->
+  <rect x="540" y="250" width="160" height="100" rx="10" fill="#e0d4ff" stroke="#5500cc" stroke-width="2" />
+  <text x="620" y="295" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">User Interface</text>
+  <text x="620" y="320" font-family="Arial" font-size="12" text-anchor="middle">Buttons & Controls</text>
+  <text x="620" y="335" font-family="Arial" font-size="12" text-anchor="middle">Voice Commands</text>
+  
+  <!-- Connection Arrows -->
+  <!-- Sensing to Processing -->
+  <line x1="260" y1="150" x2="320" y2="150" stroke="#666666" stroke-width="2" />
+  <polygon points="318,145 330,150 318,155" fill="#666666" />
+  
+  <!-- Processing to Feedback -->
+  <line x1="480" y1="150" x2="540" y2="150" stroke="#666666" stroke-width="2" />
+  <polygon points="538,145 550,150 538,155" fill="#666666" />
+  
+  <!-- Processing to AI -->
+  <line x1="400" y1="200" x2="400" y2="250" stroke="#666666" stroke-width="2" />
+  <polygon points="395,248 400,260 405,248" fill="#666666" />
+  
+  <!-- AI to Processing -->
+  <line x1="380" y1="250" x2="380" y2="200" stroke="#666666" stroke-width="2" />
+  <polygon points="375,202 380,190 385,202" fill="#666666" />
+  
+  <!-- Processing to Map -->
+  <line x1="320" y1="180" x2="260" y2="250" stroke="#666666" stroke-width="2" />
+  <polygon points="262,242 255,255 268,249" fill="#666666" />
+  
+  <!-- Map to Processing -->
+  <line x1="260" y1="270" x2="320" y2="190" stroke="#666666" stroke-width="2" />
+  <polygon points="314,194 325,185 321,196" fill="#666666" />
+  
+  <!-- UI to Processing -->
+  <line x1="540" y1="270" x2="480" y2="190" stroke="#666666" stroke-width="2" />
+  <polygon points="474,196 475,185 484,194" fill="#666666" />
+  
+  <!-- Power to All -->
+  <line x1="400" y1="400" x2="400" y2="350" stroke="#666666" stroke-width="2" />
+  <polygon points="395,352 400,340 405,352" fill="#666666" />
+  <line x1="320" y1="430" x2="200" y2="350" stroke="#666666" stroke-width="2" />
+  <polygon points="202,356 190,345 208,344" fill="#666666" />
+  <line x1="480" y1="430" x2="600" y2="350" stroke="#666666" stroke-width="2" />
+  <polygon points="594,354 610,345 598,344" fill="#666666" />
+  
+  <!-- Sensing to Map -->
+  <line x1="180" y1="200" x2="180" y2="250" stroke="#666666" stroke-width="2" />
+  <polygon points="175,248 180,260 185,248" fill="#666666" />
+  
+  <!-- AI to Feedback -->
+  <line x1="480" y1="270" x2="620" y2="200" stroke="#666666" stroke-width="2" />
+  <polygon points="614,206 625,195 621,207" fill="#666666" />
+  
+  <!-- Legend -->
+  <rect x="100" y="530" width="20" height="10" fill="#c9e7ff" stroke="#0066cc" stroke-width="1" />
+  <text x="130" y="540" font-family="Arial" font-size="12">Core Components</text>
+  
+  <rect x="250" y="530" width="20" height="10" fill="#ffb8b8" stroke="#cc0000" stroke-width="1" />
+  <text x="280" y="540" font-family="Arial" font-size="12">AI Components</text>
+  
+  <rect x="400" y="530" width="20" height="10" fill="#d4ffd6" stroke="#008800" stroke-width="1" />
+  <text x="430" y="540" font-family="Arial" font-size="12">Data Storage</text>
+  
+  <rect x="550" y="530" width="20" height="10" fill="#ffe5a8" stroke="#cc7700" stroke-width="1" />
+  <text x="580" y="540" font-family="Arial" font-size="12">Power System</text>
+</svg>
